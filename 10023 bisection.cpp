@@ -97,7 +97,6 @@ int main() {
 	int t;
     string Y, X;
 	cin >> t;
-	cout << endl;
 	while (t--) {
         cin >> Y; 
         string bottom = "1", up = Y;
@@ -107,7 +106,11 @@ int main() {
                 X = divide_by_two(X);
             }
             if (cmp(multiply(X, X), Y) == 2) {
-                cout << X << endl;
+                cout << X;
+                if (t > 0) {
+                    cout << endl;
+                }
+                cout << endl;
                 break;
             }
             else if (cmp(multiply(X, X), Y) == 1) {
