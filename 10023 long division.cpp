@@ -87,7 +87,6 @@ int main() {
 	string Y, ans = "", minus = "", factor = "", tmp;
 	vector<int> Ynum;
 	cin >> t;
-	cout << endl;
 	while (t--) {
 		cin >> Y;
 		Ynum.clear();
@@ -153,6 +152,7 @@ int main() {
 			string_sub(minus, factor);
 		}
 		cout << ans << endl;
+		if (t > 0)cout << endl;
 	}
 	return 0;
 }
