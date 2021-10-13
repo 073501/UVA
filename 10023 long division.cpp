@@ -97,10 +97,10 @@ int string_cmp(string& s1, string& s2) { //s1 > s2
 
 int main() {
     int t;
-    string Y, ans = "", remainder = "", divisor = "", tmp, diff;
     vector<int> Ynum;
     cin >> t;
     while (t--) {
+        string Y, ans = "", remainder = "", divisor = "", tmp, diff;
         cin >> Y;
         Ynum.clear();
         if (Y.length() % 2 == 0) {
