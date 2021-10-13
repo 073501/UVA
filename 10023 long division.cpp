@@ -114,10 +114,6 @@ int main() {
                 Ynum.push_back((Y[2 * i - 1] - '0') * 10 + (Y[2 * i] - '0'));
             }
         }
-        if (Ynum.size() < 2) {
-            cout << sqrt(Ynum[0]) << endl;
-            continue;
-        }
         for (int i = 0; i < Ynum.size(); i++) {
             if (Ynum[i] < 10) remainder.append("0");
             remainder.append(to_string(Ynum[i]));
