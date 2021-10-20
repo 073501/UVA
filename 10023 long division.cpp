@@ -140,3 +140,5 @@ int main() {
     }
     return 0;
 }
+//test1:2.043s
+//test2:1.417s
