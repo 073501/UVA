@@ -91,7 +91,6 @@ int main() {
 		for (int i = l-1; i >=0 ; i--) {
 			Y.push_back(s[i] - '0');
 		}
-		// initialize
 		int c, k, i;
 		if (l % 2) k = Y[l - 1], c = 1;
 		else k = Y[l - 1] * 10 + Y[l - 2], c = 2;
@@ -101,10 +100,6 @@ int main() {
 		k = k - i * i;
 		if (k < 10) { re.push_back(k); rel = 1; }
 		else { re.push_back(k % 10); re.push_back(k / 10); rel = 2; }
-		//=================================//
-		/*for (int i = 0; i < ans.size(); i++) cout << ans[i];
-		cout << endl;
-		for (int i = 0; i < re.size(); i++) cout << re[i];*/
 		for (int i = (l - 1) / 2; i > 0; i--) {
 			re.insert(re.begin(), Y[i * 2 - 1]);
 			re.insert(re.begin(), Y[i * 2 - 2]);
@@ -114,6 +109,7 @@ int main() {
 		for (int i = ans.size() - 1; i >= 0; i--) cout << ans[i];
 		cout << endl;
 	}
+	return 0;
 }
 //test1=0.822s
 //test2=0.811s
