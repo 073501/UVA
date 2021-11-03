@@ -111,5 +111,5 @@ int main() {
 	}
 	return 0;
 }
-//test1=0.822s
-//test2=0.811s
+//test1:0.822s
+//test2:0.811s
