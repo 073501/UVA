@@ -15,6 +15,7 @@ int main() {
     int i, j;
     while (cin >> i >> j) {
         int ans = 0;
+        if (i > j) swap(i, j);
         for (int k = i; k <= j; k++) {
             ans = max(ans, solve(k));
         }
