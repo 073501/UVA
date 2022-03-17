@@ -12,7 +12,7 @@ int main() {
         }
         cout << input << " is";
         if (abs(odd - even) % 11 != 0) cout << " not";
-        cout << " a mutiple of 11." << endl;
+        cout << " a multiple of 11." << endl;
     }
     return 0;
 }
